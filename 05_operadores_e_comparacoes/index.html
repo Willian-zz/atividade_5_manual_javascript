@@ -24,28 +24,52 @@
         <div class="card info">
             <h1 class="card-title">Aritméticos</h1>
             <h4 style="text-align: center;">São usados para cálculos numéricos.</h4>
-            <p class="card-text">
-                "+" <i class="fa-thin fa-arrow-right"></i> Soma
-                <br>"-" <i class="fa-thin fa-arrow-right"></i> Subtração
+            <p class="card-text" style="font-size: 18px;">
+                "+" <i class="fa-solid fa-arrow-right"></i> Soma
+                <br>"-" <i class="fa-solid fa-arrow-right"></i> Subtração
+                <br>"*" <i class="fa-solid fa-arrow-right"></i> Multiplicação
+                <br>"/" <i class="fa-solid fa-arrow-right"></i> Divisão
+                <br>"%" <i class="fa-solid fa-arrow-right"></i> Resto de divisão
             </p>
         </div>
         <div class="card info">
             <h1 class="card-title">Comparação</h1>
             <h4 style="text-align: center;">Retornam <strong>true</strong> ou <strong>false</strong>.</h4>
-            <p class="card-text">AAA</p>
+            <p class="card-text" style="font-size: 18px;">
+                "==" <i class="fa-solid fa-arrow-right"></i> Compara valor ignorando o tipo
+                <br>"===" <i class="fa-solid fa-arrow-right"></i> Compara valor de mesmo tipo
+                <br>"!=" <i class="fa-solid fa-arrow-right"></i> Diferente ignarando o tipo
+                <br>"!==" <i class="fa-solid fa-arrow-right"></i> Diferente de mesmo tipo
+                <br>">" <i class="fa-solid fa-arrow-right"></i> Maior que
+                <br>"<" <i class="fa-solid fa-arrow-right"></i> Menor que
+                <br>"<=" <i class="fa-solid fa-arrow-right"></i> Maior igual que
+                <br>"<=" <i class="fa-solid fa-arrow-right"></i> Menor igual que
+            </p>
         </div>
         <div class="card info">
             <h1 class="card-title">Lógicos</h1>
             <h4 style="text-align: center;">São usados para combinar condições, mas tambem retornam <strong>true</strong> ou <strong>false</strong>.</h4>
-            <p class="card-text">AAA</p>
+            <p class="card-text" style="font-size: 18px;">
+                "&&" <i class="fa-solid fa-arrow-right"></i> "AND" ou "E", vai retornar true se todas as opções forem favoráveis.
+                <br>"||"<i class="fa-solid fa-arrow-right"></i> "OR" ou "OU", retorna true se ao menos uma for favorável.
+                <br>"!" <i class="fa-solid fa-arrow-right"></i> "NOT" ou "NÃO", inverte o valor (true para false).
+                
+            </p>
         </div>
         <div class="card info">
             <h1 class="card-title">Atribuição</h1>
             <h4 style="text-align: center;">Servem para definir ou mudar valores de variáveis.</h4>
-            <p class="card-text">AAA</p>
+            <p class="card-text" style="font-size: 18px;">
+                "=" <i class="fa-solid fa-arrow-right"></i> Atribuição simples.
+                <br>"+="<i class="fa-solid fa-arrow-right"></i> Soma e atribui
+                <br>"-="<i class="fa-solid fa-arrow-right"></i> Subtrai e atribui
+                <br>"*="<i class="fa-solid fa-arrow-right"></i> Multiplica e atribui
+                <br>"/="<i class="fa-solid fa-arrow-right"></i> Divide e atribui
+            </p>
         </div>
     </div>
     
+    <h1 class="code-example">Exemplo de atribuição "aritmética"</h1>
     <div class="code-card">
         <p>
             <span class="tag">&ltscript&gt</span><br>
@@ -53,16 +77,17 @@
                 let a = <span class="inner-tag-text">10</span>;<br>
                 let b = <span class="inner-tag-text">5</span>;<br><br>
 
-                console.log(a + b);<br>
-                console.log(a - b);<br>
-                console.log(a * b);<br>
-                console.log(a / b);<br>
-                console.log(a % b);
+                console.log(a + b); //Retorna <strong>15</strong><br>
+                console.log(a - b); //Retorna <strong>5</strong><br>
+                console.log(a * b); //Retorna <strong>50</strong><br>
+                console.log(a / b); //Retorna <strong>2</strong><br>
+                console.log(a % b); //Retorna <strong>0</strong>
             </span><br>
             <span class="tag">&lt/script&gt</span>
         </p>
     </div>
 
+    <h1 class="code-example">Exemplo de atribuição "comparativa"</h1>
     <div class="code-card">
         <p>
             <span class="tag">&ltscript&gt</span><br>
@@ -70,30 +95,32 @@
                 let x = <span class="inner-tag-text">10</span>;<br>
                 let y = <span class="text">"10"</span>;<br><br>
 
-                console.log(x == y);<br>
-                console.log(x === y);<br>
-                console.log(x != y);<br>
-                console.log(x !== y);
+                console.log(x == y); //Retorna <strong>true</strong><br>
+                console.log(x === y); //Retorna <strong>false</strong><br>
+                console.log(x != y); //Retorna <strong>false</strong><br>
+                console.log(x !== y); //Retorna <strong>true</strong>
             </span><br>
             <span class="tag">&lt/script&gt</span>
         </p>
     </div>
 
+    <h1 class="code-example">Exemplo de atribuição "lógica"</h1>
     <div class="code-card">
         <p>
             <span class="tag">&ltscript&gt</span><br>
             <span class="function">
                 let idade = <span class="inner-tag-text">20</span>;<br><br>
 
-                console.log(idade > <span class="inner-tag-text">18</span>);<br>
-                console.log(idade < <span class="inner-tag-text">18</span>);<br>
-                console.log(idade >= <span class="inner-tag-text">18</span>);<br>
-                console.log(idade <= <span class="inner-tag-text">18</span>);
+                console.log(idade > <span class="inner-tag-text">18</span>); //Retorna <strong>true</strong><br>
+                console.log(idade < <span class="inner-tag-text">18</span>); //Retorna <strong>false</strong><br>
+                console.log(idade >= <span class="inner-tag-text">18</span>); //Retorna <strong>true</strong><br>
+                console.log(idade <= <span class="inner-tag-text">18</span>) //Retorna <strong>false</strong>;
             </span><br>
             <span class="tag">&lt/script&gt</span>
         </p>
     </div>
 
+    <h1 class="code-example">Exemplo de atribuição</h1>
     <div class="code-card">
         <p>
             <span class="tag">&ltscript&gt</span><br>
@@ -101,9 +128,9 @@
                 let temCarteira = <span class="inner-tag-text">true</span>;<br>
                 let idade = <span class="inner-tag-text">20</span>;<br><br>
 
-                console.log(idade >= <span class="inner-tag-text">18</span> && temCarteira);<br>
-                console.log(idade >= <span class="inner-tag-text">18</span> || temCarteira);<br>
-                console.log(!temCarteira);
+                console.log(idade >= <span class="inner-tag-text">18</span> && temCarteira); //Retorna <strong>true</strong><br>
+                console.log(idade >= <span class="inner-tag-text">18</span> || temCarteira); //Retorna <strong>true</strong><br>
+                console.log(!temCarteira); //Retorna <strong>false</strong>
             </span><br>
             <span class="tag">&lt/script&gt</span>
         </p>
