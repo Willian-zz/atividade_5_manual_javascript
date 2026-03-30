@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Variáveis tipo escopo</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-brands fa-square-js"></i>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="wrap-card">
+            <div class="card small">
+                <h1 class="card-title">O que é uma variável</h1>
+                <p class="card-text">Uma variável é uma espécie de "marca" na memória do computador, que é usada para armazenar e manipular dados, como números, textos e/ou até objetos</p>
+            </div>
+            <div class="card big">
+                <h1 class="card-title">Como declarar uma variável em JavaScript</h1>
+                <p class="card-text">Para declarar uma variável em JavaScript é necessário utilizar <strong>"const"</strong>, <strong>"let"</strong> ou <strong>"var"</strong>, isso vai definir de qual forma a variável vaise comportar. Depois é preciso adicionar o nome dela, pode ser qualquer nome que seja possível escrever e relembrar de forma fácil. Agora se você quiser acessar algo do seu arquivo HTML é preciso utilizar "document.", se não, não é necessário. E depois disso, se for preciso utilizar <strong>"document."</strong> é necessário achar o "id" ou "class" que foi classificada ao elemento, usando de <strong>"getElementById"</strong> para objetos classificados com "id", ou <strong>".getElementByClass"</strong> para elementos classificados com "class", ou em casos que é necessário acessar qualquer tipo de elemento, se usa <strong>"querySelector"</strong></p>
+
+                <p>Exemplo de variável que acessa elementos HTML:</p>
+                <p>const botao = document.getElementById('btn'); OU const botao = document.getElementByClass('btn')</p>
+
+                <p>Exemplo de variável com querySelector:</p>
+                <p>const texto = document.querySelector('#text'); OU const texto = document.quertSelector('.text'); OU const texto = document.querySelector('p')</p>
+
+                <p>Exemplo de variável simples:</p>
+                <p>let numero = 0; OU var numero = 0;</p>
+            </div>
+        </div>
+    
+        <div class="card big">
+            <h1 class="card-title">Diferença entre var, let e const</h1>
+            <p class="card-text">O <strong>"const"</strong> é para o variáveis que não mudam durante a execução do programa, por exemplo um "button" ou uma "div". <br> Já o <strong>"let"</strong> é para variáveis de tipo que mudam durante a execução, por exemplo o resultado de uma soma, ou o nome de do usuário.<br> O <strong>"var"</strong> éuma variável mais antiga, que tem a possibilidade de ser acessada de qualquer lugar dentro da função, então se por exemplo, ela for declarada dentro de um "if", depois ela pode ser acessada fora dele também.</p>
+        </div>
+
+        <h1>Escopo global</h1>
+        <p>Um escopo é a variável do seu código, e como o nome já diz, o escopo global, pode ser acessado em qualquer função durante o execução do seu programa, nãose limitando a apenas uma função.</p>
+
+        <p>let numero = 0;</p>
+
+        <h1>Escopo de função</h1>
+        <p>Um escopo de função, ao invés do global, ele não pode ser acessado durante todo o código, apenas dentro de uma função especifica, então a variável deve ser declarada dentro da função para ser considerado um escopo desse tipo.</p>
+
+        <p>function soma(){<br>let numero = 0; <br>numero++; <br>console.log(numero); <br>}</p>
+
+        <h1>Escopo de bloco</h1>
+        <p>Um escopo de bloco é o mais restrito de todos, funcionado apenas dentro de um bloco(if, while, for e etc...), existindo apenas dentro dela.</p>
+
+        <p>if (0 > 1) { <br>let numero = 0; <br>numero++;<br> console.logo(numero); <br>}</p>
+    </section>
+
+</body>
+</html>

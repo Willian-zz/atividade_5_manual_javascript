@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Condicionais</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-brands fa-square-js"></i>
+        </div>
+    </nav>
+    
+    <h1 class="title">Condicionais no JavaScript</h1>
+    <p class="info-text">
+        As condicionais servem para tomar decisões dentro do código, 
+        fazendo com que ele apenas execute se algo for de acordo com 
+        o que a condicional pede no bloco.
+        <br>As condicionais são as padrões:
+        <br><strong>IF:</strong> Caso algo seja favorável, executa
+        <br><strong>ELSE:</strong> Caso algo não seja favorável, executa outra parte do bloco.
+        <br><strong>ELSE IF:</strong> Caso algo não seja favorável, pede outra ideia, se for favorável, executa.
+        <br><strong>SWITCH:</strong> Executa o caso que for favorável dentre várias funções.
+    </p>
+    
+    <h1 class="code-example">Exemplo de condicional "if"</h1>
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let idade = 18;<br><br>
+
+                <span class="inner-tag">if</span> (idade >= 18) {<br>
+                &nbsp;&nbsp;console.log(<span class="text">"Maior de idade"</span>);<br>
+                }
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+
+    <h1 class="code-example">Exemplo de condicional "else"</h1>
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let idade = 16;<br><br>
+
+                <span class="inner-tag">if</span> (idade >= 18) {<br>
+                &nbsp;&nbsp;console.log(<span class="text">"Maior de idade"</span>);<br>
+                } <span class="inner-tag">else</span> {<br>
+                &nbsp;&nbsp;console.log(<span class="text">"Menor de idade"</span>);<br>
+                }
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+
+    <h1 class="code-example">Exemplo de condicional "else if"</h1>
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let nota = 7;<br><br>
+
+                <span class="inner-tag">if</span> (nota >= 9) {<br>
+                &nbsp;&nbsp;console.log(<span class="text">"Excelente"</span>);<br>
+                } <span class="inner-tag">else if</span> (nota >= 6) {<br>
+                &nbsp;&nbsp;console.log(<span class="text">"Aprovado"</span>);<br>
+                } <span class="inner-tag">else</span> {<br>
+                &nbsp;&nbsp;console.log(<span class="text">"Reprovado"</span>);<br>
+                }
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+
+    <h1 class="code-example">Exemplo de condicional "switch"</h1>
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let dia = 3;<br><br>
+
+                <span class="inner-tag">switch</span> (dia) {<br>
+                &nbsp;&nbsp;<span class="inner-tag">case</span> 1:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="text">"Domingo"</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="inner-tag">break</span>;<br><br>
+
+                &nbsp;&nbsp;<span class="inner-tag">case</span> 2:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="text">"Segunda-feira"</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="inner-tag">break</span>;<br><br>
+
+                &nbsp;&nbsp;<span class="inner-tag">case</span> 3:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="text">"Terça-feira"</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="inner-tag">break</span>;<br><br>
+
+                &nbsp;&nbsp;<span class="inner-tag">default</span>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="text">"Dia inválido"</span>);<br>
+                }
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+</body>
+</html>

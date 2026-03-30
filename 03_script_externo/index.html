@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Script Externo</title>
 </head>
 <body>
-    <h1>Exemplo de conexão de arquivo JavaScript</h1>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-brands fa-square-js"></i>
+        </div>
+    </nav>
 
-    <p>Primeiro é criado um arquivo terminado em ".js", sendo de norma padrão se utilizar script como nome principal do arquivo</p>
+    <h1 class="title">Exemplo de conexão de arquivo JavaScript</h1>
 
-    <p>&ltscript scr="arquivo_java_script.js"&gt &lt/script&gt</p>
+    <p class="info-text">Primeiro é criado um arquivo terminado em ".js", sendo de norma padrão se utilizar script como nome principal do arquivo</p>
+
+    <div class="code-card">
+        <p><span class="tag">&ltscript<span class="inner-tag"> src=</span><span class="inner-tag-text">"script.js"</span>&gt</span><span class="tag" style="margin-left: 0px;">&lt/script&gt</span></p>
+        <br> 
+        <p style="color: yellow;">OU</p>
+        <br>
+        <p><span class="tag">&lthead&gt</span></p>
+        <p><span class="tag" style="margin-left: 0px;">&ltlink<span class="inner-tag"> src=</span><span class="inner-tag-text">"script.js" defer</span>&gt</span></p>
+        <p><span class="tag">&lt/head&gt</span></p>
+    </div>
 </body>
 </html>

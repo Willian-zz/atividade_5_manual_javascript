@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Operadores e Comparações</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-brands fa-square-js"></i>
+        </div>
+    </nav>
+    
+    <h1 class="title">Operadores e comparações</h1>
+    <p class="info-text">
+        No JavaScript existem vários tipos de operadores, como os 
+        clássicos operadores aritméticos ou matemáticos, de comparação, 
+        os lógicos e os de atribuição. 
+    </p>
+    <div class="flex-card">
+        <div class="card info">
+            <h1 class="card-title">Aritméticos</h1>
+            <h4 style="text-align: center;">São usados para cálculos numéricos.</h4>
+            <p class="card-text">
+                "+" <i class="fa-thin fa-arrow-right"></i> Soma
+                <br>"-" <i class="fa-thin fa-arrow-right"></i> Subtração
+            </p>
+        </div>
+        <div class="card info">
+            <h1 class="card-title">Comparação</h1>
+            <h4 style="text-align: center;">Retornam <strong>true</strong> ou <strong>false</strong>.</h4>
+            <p class="card-text">AAA</p>
+        </div>
+        <div class="card info">
+            <h1 class="card-title">Lógicos</h1>
+            <h4 style="text-align: center;">São usados para combinar condições, mas tambem retornam <strong>true</strong> ou <strong>false</strong>.</h4>
+            <p class="card-text">AAA</p>
+        </div>
+        <div class="card info">
+            <h1 class="card-title">Atribuição</h1>
+            <h4 style="text-align: center;">Servem para definir ou mudar valores de variáveis.</h4>
+            <p class="card-text">AAA</p>
+        </div>
+    </div>
+    
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let a = <span class="inner-tag-text">10</span>;<br>
+                let b = <span class="inner-tag-text">5</span>;<br><br>
+
+                console.log(a + b);<br>
+                console.log(a - b);<br>
+                console.log(a * b);<br>
+                console.log(a / b);<br>
+                console.log(a % b);
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let x = <span class="inner-tag-text">10</span>;<br>
+                let y = <span class="text">"10"</span>;<br><br>
+
+                console.log(x == y);<br>
+                console.log(x === y);<br>
+                console.log(x != y);<br>
+                console.log(x !== y);
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let idade = <span class="inner-tag-text">20</span>;<br><br>
+
+                console.log(idade > <span class="inner-tag-text">18</span>);<br>
+                console.log(idade < <span class="inner-tag-text">18</span>);<br>
+                console.log(idade >= <span class="inner-tag-text">18</span>);<br>
+                console.log(idade <= <span class="inner-tag-text">18</span>);
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+
+    <div class="code-card">
+        <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                let temCarteira = <span class="inner-tag-text">true</span>;<br>
+                let idade = <span class="inner-tag-text">20</span>;<br><br>
+
+                console.log(idade >= <span class="inner-tag-text">18</span> && temCarteira);<br>
+                console.log(idade >= <span class="inner-tag-text">18</span> || temCarteira);<br>
+                console.log(!temCarteira);
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+        </p>
+    </div>
+
+</body>
+</html>
