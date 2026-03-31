@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Funcional</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="fa-brands fa-square-js"></i>
+        </div>
+    </nav>
+    
+
+    <h1 class="title">Exemplo funcional do JavaScript</h1>
+
+    <div style="display: flex; width: 100vw; justify-content: center;" id="exemplo1">
+        <div style="display: flex; flex-direction: column; align-items: start; width: 300px; margin: 100px; padding: 30px; background-color: gray; border-radius: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; gap: 5px; border: 2px solid black;">
+            <input type="text" id="usuario" placeholder="usuário" style="background-color: white; padding: 5px; border: 2px solid black; border-radius: 10px;">
+
+            <label for="checado" style="font-weight: bold;">Verificar:</label>
+            <input type="checkbox" id="checado" name="check">
+
+            <button class="btn" id="btn-send" type="click" style="border: 2px solid black; padding: 5px; border-radius: 10px;">Enviar</button>
+
+            <p id="texto_aprovacao">Aguardando...</p>
+            <img src="../assets/img/joia.webp" alt="Emoji joinha" class="invisivel" id="img">
+        </div>
+    </div>
+    
+</body>
+</html>

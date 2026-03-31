@@ -131,3 +131,8 @@
     font-weight: 100;
     font-size: 16px;
 }
+
+.invisivel {
+    width: 0px;
+    height: 0px;
+}

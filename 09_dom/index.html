@@ -14,5 +14,240 @@
         </div>
     </nav>
     
+    <h1 class="title">Document Object Model</h1>\
+    <p class="info-text">
+        O <strong>DOM</strong> pega as informações da página HTML e 
+        transforma em uma "árvore", que permite que o 
+        script manipule a estrutura e conteúdo da página. 
+        <br>Com o <strong>DOM</strong> é possível acessar elementos, 
+        alterar conteúdo, mudar estilos e reagir a cliques.
+    </p>
+
+    <div class="flex-card" style="margin-top: 20px;">
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">getElementById()</h1>
+            <p class="card-text">
+                Serve para achar um elemento pelo <strong>ID</strong>.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        <span class="inner-tag">const</span> el = document.getElementById(<span class="text">'btn'</span>);
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">querySelector()</h1>
+            <p class="card-text">
+                Seleciona o primeiro elemento usando seletor CSS.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        <span class="inner-tag">const</span> el = document.querySelector(<span class="text">'.box'</span>);
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">querySelectorAll()</h1>
+            <p class="card-text">
+                Seleciona todos os elementos do tipo indicado.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        <span class="inner-tag">const</span> itens = document.querySelectorAll(<span class="text">'.item'</span>);
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-card" style="margin-top: 20px;">
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">value</h1>
+            <p class="card-text">
+                Pega o valor digitado em um input.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        <span class="inner-tag">let</span> valor = input.value;
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">checked</h1>
+            <p class="card-text">
+                Verifica se um input está marcado.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        <span class="inner-tag">let</span> ativo = checkbox.checked;
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">checkValidity()</h1>
+            <p class="card-text">
+                Verifica se um input é válido.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        input.checkValidity();
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-card" style="margin-top: 20px;">
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">textContent</h1>
+            <p class="card-text">
+                Lê ou altera o texto de um elemento.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        elemento.textContent = <span class="text">"Novo texto"</span>;
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">style</h1>
+            <p class="card-text">
+                Permite alterar o CSS via JavaScript.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        elemento.style.color = <span class="text">"red"</span>;
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">classList</h1>
+            <p class="card-text">
+                Manipula classes de um elemento.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        elemento.classList.add(<span class="text">"ativo"</span>);<br>
+                        elemento.classList.remove(<span class="text">"ativo"</span>);
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-card" style="margin-top: 20px;">
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">addEventListener()</h1>
+            <p class="card-text">
+                Adiciona um evento a um elemento.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        botao.addEventListener(<span class="text">"click"</span>, <span class="inner-tag">function</span>() {<br>
+                        &nbsp;&nbsp;console.log(<span class="text">"Clicou"</span>);<br>
+                        });
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">DOMContentLoaded</h1>
+            <p class="card-text">
+                Executa quando o HTML termina de carregar.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        document.addEventListener(<span class="text">"DOMContentLoaded"</span>, <span class="inner-tag">function</span>() {<br>
+                        &nbsp;&nbsp;console.log(<span class="text">"Carregou"</span>);<br>
+                        });
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">createElement()</h1>
+            <p class="card-text">
+                Cria um elemento HTML via JavaScript.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        <span class="inner-tag">const</span> div = document.createElement(<span class="text">"div"</span>);
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-card" style="margin-top: 20px;">
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">appendChild()</h1>
+            <p class="card-text">
+                Adiciona um elemento na página.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        document.body.appendChild(div);
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="card info" style="width: 430px;">
+            <h1 class="card-title">remove()</h1>
+            <p class="card-text">
+                Remove um elemento da página.
+            </p>
+
+            <div class="code-card" style="max-width: 100%;">
+                <p style="font-size: 17px;">
+                    <span class="function">
+                        elemento.remove();
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+        
+
 </body>
 </html>

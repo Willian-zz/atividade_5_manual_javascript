@@ -14,41 +14,140 @@
         </div>
     </nav>
 
-        <h1>O que é uma variável</h1>
-        <p>Uma variável é uma espécie de "marca" na memória do computador, que é usada para armazenar e manipular dados, como números, textos e/ou até objetos</p>
+        <h1 class="title">Variável</h1>
+        <p class="info-text">Uma variável é uma espécie de "marca" na memória do computador, que é usada para armazenar e manipular dados, como números, textos e/ou até objetos</p>
 
-        <h1>Como declarar uma variável em JavaScript</h1>
-        <p>Para declarar uma variável em JavaScript é necessário utilizar <strong>"const"</strong>, <strong>"let"</strong> ou <strong>"var"</strong>, isso vai definir de qual forma a variável vaise comportar. Depois é preciso adicionar o nome dela, pode ser qualquer nome que seja possível escrever e relembrar de forma fácil. Agora se você quiser acessar algo do seu arquivo HTML é preciso utilizar "document.", se não, não é necessário. E depois disso, se for preciso utilizar <strong>"document."</strong> é necessário achar o "id" ou "class" que foi classificada ao elemento, usando de <strong>"getElementById"</strong> para objetos classificados com "id", ou <strong>".getElementByClass"</strong> para elementos classificados com "class", ou em casos que é necessário acessar qualquer tipo de elemento, se usa <strong>"querySelector"</strong></p>
+        <h1 class="title">Como declarar uma variável em JavaScript</h1>
+        <p class="info-text">Para declarar uma variável em JavaScript é necessário utilizar <strong>"const"</strong>, <strong>"let"</strong> ou <strong>"var"</strong>, isso vai definir de qual forma a variável vaise comportar. Depois é preciso adicionar o nome dela, pode ser qualquer nome que seja possível escrever e relembrar de forma fácil. Agora se você quiser acessar algo do seu arquivo HTML é preciso utilizar "document.", se não, não é necessário. E depois disso, se for preciso utilizar <strong>"document."</strong> é necessário achar o "id" ou "class" que foi classificada ao elemento, usando de <strong>"getElementById"</strong> para objetos classificados com "id", ou <strong>".getElementByClass"</strong> para elementos classificados com "class", ou em casos que é necessário acessar qualquer tipo de elemento, se usa <strong>"querySelector"</strong></p>
 
-        <p>Exemplo de variável que acessa elementos HTML:</p>
-        <p>const botao = document.getElementById('btn'); OU const botao = document.getElementByClass('btn')</p>
+        <h1 class="code-example">Exemplo de variável que acessa elementos HTML:</h1>
+        <div class="code-card">
+            <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                <span class="inner-tag">const</span> botao = document.getElementById(<span class="text">'btn'</span>);<br>
+                <span class="inner-tag">const</span> botoes = document.getElementsByClassName(<span class="text">'btn'</span>);
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+            </p>
+        </div>
 
-        <p>Exemplo de variável com querySelector:</p>
-        <p>const texto = document.querySelector('#text'); OU const texto = document.quertSelector('.text'); OU const texto = document.querySelector('p')</p>
+        <h1 class="code-example">Exemplo de variável com querySelector:</h1>
+        <div class="code-card">
+            <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                <span class="inner-tag">const</span> texto = document.querySelector(<span class="text">'#text'</span>);<br>
+                <span class="inner-tag">const</span> classe = document.querySelector(<span class="text">'.text'</span>);<br>
+                <span class="inner-tag">const</span> paragrafo = document.querySelector(<span class="text">'p'</span>);
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+            </p>
+        </div>
 
-        <p>Exemplo de variável simples:</p>
-        <p>let numero = 0; OU var numero = 0;</p>
+        <h1 class="code-example">Exemplo de variável simples:</h1>
+        <div class="code-card">
+            <p>
+            <span class="tag">&ltscript&gt</span><br>
+            <span class="function">
+                <span class="inner-tag">let</span> numero = <span class="inner-tag-text">0</span>;<br>
+                <span style="color: yellow;">OU</span><br>
+                <span class="inner-tag">var</span> numero = <span class="inner-tag-text">0</span>;
+            </span><br>
+            <span class="tag">&lt/script&gt</span>
+            </p>
+        </div>
 
     
 
-        <h1>Diferença entre var, let e const</h1>
-        <p>O <strong>"const"</strong> é para o variáveis que não mudam durante a execução do programa, por exemplo um "button" ou uma "div". <br> Já o <strong>"let"</strong> é para variáveis de tipo que mudam durante a execução, por exemplo o resultado de uma soma, ou o nome de do usuário.<br> O <strong>"var"</strong> éuma variável mais antiga, que tem a possibilidade de ser acessada de qualquer lugar dentro da função, então se por exemplo, ela for declarada dentro de um "if", depois ela pode ser acessada fora dele também.</p>
+        <h1 class="title">Diferença entre var, let e const</h1>
+        <div class="flex-card">
+            <div class="card info" style="height: 200px;">
+                <h1 class="card-title">const</h1>
+                <h4 style="text-align: center;">Valor fixo</h4>
+                <p class="card-text" style="font-size: 18px;">
+                    Usado para variáveis que não mudam durante a execução.<br>
+                    Exemplo: elementos HTML como <strong>"button"</strong> ou <strong>"div"</strong>.
+                </p>
+            </div>
+        
+            <div class="card info" style="height: 200px;">
+                <h1 class="card-title">let</h1>
+                <h4 style="text-align: center;">Valor variável</h4>
+                <p class="card-text" style="font-size: 18px;">
+                    Usado para valores que podem mudar durante o programa.<br>
+                    Exemplo: resultados de contas ou dados do usuário.
+                </p>
+            </div>
+        
+            <div class="card info" style="height: 200px;">
+                <h1 class="card-title">var</h1>
+                <h4 style="text-align: center;">Escopo antigo</h4>
+                <p class="card-text" style="font-size: 18px;">
+                    É uma forma antiga de declarar variáveis.<br>
+                    Pode ser declarada dentro de um bloco <strong>"if"</strong>, e ser acessada dentro e fora dele.
+                </p>
+            </div>
+        </div>
 
-
-        <h1>Escopo global</h1>
-        <p>Um escopo é a variável do seu código, e como o nome já diz, o escopo global, pode ser acessado em qualquer função durante o execução do seu programa, nãose limitando a apenas uma função.</p>
-
-        <p>let numero = 0;</p>
-
-        <h1>Escopo de função</h1>
-        <p>Um escopo de função, ao invés do global, ele não pode ser acessado durante todo o código, apenas dentro de uma função especifica, então a variável deve ser declarada dentro da função para ser considerado um escopo desse tipo.</p>
-
-        <p>function soma(){<br>let numero = 0; <br>numero++; <br>console.log(numero); <br>}</p>
-
-        <h1>Escopo de bloco</h1>
-        <p>Um escopo de bloco é o mais restrito de todos, funcionado apenas dentro de um bloco(if, while, for e etc...), existindo apenas dentro dela.</p>
-
-        <p>if (0 > 1) { <br>let numero = 0; <br>numero++;<br> console.logo(numero); <br>}</p>
-
+        <h1 class="title">Tipos de escopo</h1>
+        <div class="flex-card">
+        
+            <div class="card info">
+                <h1 class="card-title">Escopo global</h1>
+                <p class="card-text" style="font-size: 18px;">
+                    Pode ser acessado em qualquer parte do código, não se limitando a  apenas uma função ou bloco.
+                </p>
+        
+                <div class="code-card" style="max-width: 100%;">
+                    <p>
+                        <span class="function">
+                            <span class="inner-tag">let</span> numero = <span class="inner-tag-text">0</span>;<br><br>
+                            console.log(numero);
+                        </span>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="card info">
+                <h1 class="card-title">Escopo de função</h1>
+                <p class="card-text" style="font-size: 18px;">
+                    Só pode ser acessado dentro da função onde foi declarado.
+                </p>
+        
+                <div class="code-card" style="max-width: 100%;">
+                    <p>
+                        <span class="function">
+                            <span class="inner-tag">function</span> soma() {<br>
+                            &nbsp;&nbsp;<span class="inner-tag">let</span> numero = <span class="inner-tag-text">0</span>;<br>
+                            &nbsp;&nbsp;numero++;<br>
+                            &nbsp;&nbsp;console.log(numero);<br>
+                            }
+                        </span>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="card info">
+                <h1 class="card-title">Escopo de bloco</h1>
+                <p class="card-text" style="font-size: 18px;">
+                    Funciona apenas dentro de blocos como <strong>if</strong>, <strong>for</strong> ou <strong>while</strong>.
+                </p>
+        
+                <div class="code-card" style="max-width: 100%;">
+                    <p>
+                        <span class="function">
+                            <span class="inner-tag">if</span> (<span class="inner-tag-text">0</span> > <span
+                                class="inner-tag-text">1</span>) {<br>
+                            &nbsp;&nbsp;<span class="inner-tag">let</span> numero = <span class="inner-tag-text">0</span>;<br>
+                            &nbsp;&nbsp;numero++;<br>
+                            &nbsp;&nbsp;console.log(numero);<br>
+                            }
+                        </span>
+                    </p>
+                </div>
+            </div>
+        
+        </div>
 </body>
 </html>
